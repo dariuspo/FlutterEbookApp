@@ -237,7 +237,6 @@ class _DetailsState extends State<Details> {
         onPressed: () => openBook(provider),
         child: Text(
           'Read Book',
-          style: TextStyle(fontSize: 13, color: Colors.black),
         ),
       );
     } else {
@@ -249,7 +248,6 @@ class _DetailsState extends State<Details> {
         ),
         child: Text(
           'Download',
-          style: TextStyle(fontSize: 13, color: Colors.black),
         ),
       );
     }

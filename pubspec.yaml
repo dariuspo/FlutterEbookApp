@@ -37,11 +37,20 @@ dependencies:
   xml2json: ^5.3.1
   iridium_reader_widget:
     path: ./packages/iridium/reader_widget
-
+  flutter_launcher_icons: ^0.11.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path_ios: "assets/images/app-icon.png"
+  remove_alpha_ios: true
+  image_path_android: "assets/images/app-icon.png"
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

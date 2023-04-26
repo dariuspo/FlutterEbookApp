@@ -7,7 +7,7 @@ class AppProvider extends ChangeNotifier {
     checkTheme();
   }
 
-  ThemeData theme = ThemeConfig.lightTheme;
+  ThemeData theme = ThemeConfig.darkTheme;
   Key? key = UniqueKey();
   GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
@@ -36,7 +36,7 @@ class AppProvider extends ChangeNotifier {
   Future<ThemeData> checkTheme() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     ThemeData t;
-    String r = prefs.getString('theme') ?? 'light';
+    String r = prefs.getString('theme') ?? 'dark';
 
     if (r == 'light') {
       t = ThemeConfig.lightTheme;
